@@ -1,0 +1,32 @@
+{
+  "name": "github-cdn",
+  "version": "1.0.0",
+  "description": "An Express server to upload files to a GitHub repository and return the raw file URL.",
+  "main": "./api/index.js",
+  "scripts": {
+    "start": "pm2 start ./api/index.js --deep-monitoring --attach --name ghbcdn",
+    "stop": "pm2 stop ghbcdn",
+    "restart": "pm2 restart ghbcdn"
+  },
+  "keywords": [
+    "express",
+    "github",
+    "cdn",
+    "file-uploader"
+  ],
+  "author": "Clever Tech",
+  "license": "MIT",
+  "dependencies": {
+    "express": "*",
+    "axios": "*",
+    "dotenv": "*",
+    "express-rate-limit": "*",
+    "multer": "*",
+    "fs": "*",
+    "path": "*",
+    "pm2": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
