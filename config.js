@@ -11,7 +11,7 @@ module.exports = {
   repoBranch: process.env.REPO_BRANCH || 'main', // Replace or not
   githubRepo: process.env.GITHUB_REPO || 'ghbcdn', // Your storage repo name
   commitMessage: process.env.COMMIT_MESSAGE || 'Github Cdn:Upload', // Your commit Message
-  githubUser: process.env.GITHUB_USERNAME || 'mauricegift', // Yout github username
+  githubUser: process.env.GITHUB_USERNAME || 'clevertechnexus2', // Yout github username
   githubApiUrl: process.env.GITHUB_API_URL || 'https://api.github.com', // Maintain this
   cdnApiUrl: process.env.CDN_API_URL || 'https://cdn.jsdelivr.net/gh', // Maintain this
   cfTurnstileApiUrl: process.env.CF_TURNSTILE_API_URL || "https://challenges.cloudflare.com", // Mintain this
